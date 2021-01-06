@@ -1,0 +1,30 @@
+print("You are in a dark room in a mysterious castle")
+print("You must choose between doors 1, 2,3 or 4")
+door = input("Choose a door")
+if door == "1":
+    print("You have won the game")
+elif door == "2":
+    print("You were eaten")
+elif door == "3":
+    print("You entered a room with a sleeping dragon")
+    print("You can either:")
+    print("1) Try to rob the dragon")
+    print("2) Sneak past the dragon")
+    dragonChoice=input("1 or 2")
+    if dragonChoice == "1":
+        print("You die")
+    elif dragonChoice == "2":
+        print("You win")
+    else:
+        print("You didn't pick")
+elif door =="4":
+    print("You found a sphinx")
+    print("Pick a number between 1 and 10")
+    number = int(input("???"))
+    import random
+    if number == random.randint(1,10):
+        print("You live")
+    else:
+        print("You've been eaten")
+else:
+    print("You did not pick a door")
