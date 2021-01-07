@@ -1,0 +1,14 @@
+def sum_primes(lst):
+	sum = 0
+	for x in lst:
+		count = 0
+		for y in range(1,x+1):
+			if x % y == 0:
+				count += 1		
+		if count == 2:
+			sum += x
+						   
+	return sum
+			
+ans = sum_primes([2,3,4,11,20,50,71])
+print(ans)
