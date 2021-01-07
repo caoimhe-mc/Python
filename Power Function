@@ -1,0 +1,8 @@
+def calculate_exponent(a,b):
+    ans = 1
+    for b in range (0,b):
+        ans = ans*a
+    return ans
+
+result = calculate_exponent(3,3)
+print("Answer is", result)
