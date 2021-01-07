@@ -1,0 +1,9 @@
+def profit(info):
+	cost_price = info['cost_price']
+	sell_price = info[1]
+	inventory = info[2]
+	profit = inventory*sell_price - inventory*cost_price
+	return profit
+
+ans = profit({'cost_price': 32.67, 'sell_price': 45.00, 'inventory': 1200})
+print(ans)
