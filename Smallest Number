@@ -1,0 +1,10 @@
+def find_smallest_num(nums):
+	a = nums[0]	
+	l = len(nums)
+	for x in range (0,l):
+		if nums[x] < a:
+			a = nums[x]
+	return a	
+
+ans = find_smallest_num([34, 15, 88, 2])
+print(ans)
