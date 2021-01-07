@@ -1,0 +1,5 @@
+def concat(lst1, lst2):
+	size = len(lst2)
+	for x in range (0,size):
+		lst1.append(lst2[x])
+	return lst1
